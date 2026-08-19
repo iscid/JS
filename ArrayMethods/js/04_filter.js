@@ -12,15 +12,15 @@ const carrito = [
 ];
 
 const television = carrito.filter((producto) => {
-  return producto.nombre === "Television";
-  //   return producto.nombre !== "Television";
+  return producto.nombre === "Television"; // Arreglo sólo con Television
+  //   return producto.nombre !== "Television"; // Arreglo sin Television
 });
 
 console.log(television);
 
 let menorQuinientos = carrito.filter((producto) => {
-  return producto.precio < 500;
-  //   return producto.precio > 500;
+  return producto.precio < 500; // Arreglo de productos con precio menor a $500
+  //   return producto.precio > 500; // Arreglo de productos con precio mayor a $500
 });
 
 console.log(menorQuinientos);
