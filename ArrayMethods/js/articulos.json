@@ -1,0 +1,44 @@
+[
+  {
+    "id": 1,
+    "nombre": "Laptop Lenovo",
+    "categoria": "Computadoras",
+    "precio": 15000,
+    "etiquetas": ["laptop", "computadora", "oficina"],
+  },
+  {
+    "id": 2,
+    "nombre": "Laptop HP",
+    "categoria": "Computadoras",
+    "precio": 18000,
+    "etiquetas": ["laptop", "computadora", "trabajo"],
+  },
+  {
+    "id": 3,
+    "nombre": "Mouse Logitech",
+    "categoria": "Accesorios",
+    "precio": 650,
+    "etiquetas": ["mouse", "accesorio", "computadora"],
+  },
+  {
+    "id": 4,
+    "nombre": "Teclado Logitech",
+    "categoria": "Accesorios",
+    "precio": 900,
+    "etiquetas": ["teclado", "accesorio", "computadora"],
+  },
+  {
+    "id": 5,
+    "nombre": "Monitor Samsung",
+    "categoria": "Monitores",
+    "precio": 4500,
+    "etiquetas": ["monitor", "pantalla", "computadora"],
+  },
+  {
+    "id": 6,
+    "nombre": "Monitor LG",
+    "categoria": "Monitores",
+    "precio": 5200,
+    "etiquetas": ["monitor", "pantalla", "oficina"],
+  },
+];
