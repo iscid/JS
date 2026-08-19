@@ -1,4 +1,4 @@
-// findIndex: devuleve el índice en caso de existir el elemento, o 0 si no lo encuentra.
+// findIndex: devuleve el índice en caso de existir el elemento, o -1 si no lo encuentra.
 
 const meses = [
   "Enero",
@@ -25,3 +25,21 @@ const carrito = [
   { nombre: "Teclado", precio: 400 },
   { nombre: "Celular", precio: 700 },
 ];
+
+meses.forEach((mes, index) => {
+  if (mes === "Abril") {
+    console.log(`Encontrado en el índice ${index}`);
+  }
+});
+
+const indice = meses.findIndex((mes) => {
+  return mes === "Abril";
+});
+
+console.log(indice);
+
+const indiceCarrito = carrito.findIndex((producto) => {
+  return producto.nombre === "Teclado";
+});
+
+console.log("Indice del producto dentro del carrito: ", indiceCarrito);
