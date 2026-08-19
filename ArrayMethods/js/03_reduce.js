@@ -1,4 +1,4 @@
-// findIndex: devuleve el índice en caso de existir el elemento, o -1 si no lo encuentra.
+// reduce: devuelve lo acumulado
 
 const meses = [
   "Enero",
@@ -26,20 +26,18 @@ const carrito = [
   { nombre: "Celular", precio: 700 },
 ];
 
-meses.forEach((mes, index) => {
-  if (mes === "Abril") {
-    console.log(`Encontrado en el índice ${index}`); // 3
-  }
+// Ejemplo con forEach
+let total = 0;
+
+carrito.forEach((producto) => {
+  total += producto.precio;
 });
 
-const indice = meses.findIndex((mes) => {
-  return mes === "Abril"; // 3
-});
+console.log(`El total con forEach es ${total}`);
 
-console.log(indice);
+// Ejemplo con reduce
+let totalReduce = carrito.reduce((total, producto) => {
+  return total + producto.precio;
+}, 0);
 
-const indiceCarrito = carrito.findIndex((producto) => {
-  return producto.nombre === "Teclado";
-});
-
-console.log("Indice del producto dentro del carrito: ", indiceCarrito); // 6
+console.log("El total con reduce: ", totalReduce);
